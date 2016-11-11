@@ -15,13 +15,13 @@ SET /p "Choice=What file do you want?"
 IF %Choice% == 1 (
 REM stable patched is available.
 wget.exe https://dl.pluton.team/pluton_rust_patched_stable_win.zip --no-check-certificate
-7za.exe x .\pluton_rust_patched_stable_win.zip -o.\server\RustDedicated_Data\Managed -y
+7za.exe x .\pluton_rust_patched_stable_win.zip -o .\server\RustDedicated_Data\Managed -y
 GOTO :finished
 ) 
 IF %Choice% == 2 (
 REM Latest patched is available if you like, but possibly buggy.
 wget.exe https://dl.pluton.team/pluton_rust_patched_latest_win.zip --no-check-certificate
-7za.exe x .\pluton_rust_patched_latest_win.zip -o.\server\RustDedicated_Data\Managed -y
+7za.exe x .\pluton_rust_patched_latest_win.zip -o .\server\RustDedicated_Data\Managed -y
 GOTO :finished
 ) 
 IF %Choice% NEQ 1 IF %Choice% NEQ 2 (

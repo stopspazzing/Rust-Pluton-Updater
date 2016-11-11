@@ -11,7 +11,7 @@ echo.
 echo.
 IF NOT EXIST .\steamcmd\steamcmd.exe (
 wget.exe https://steamcdn-a.akamaihd.net/client/installer/steamcmd.zip --no-check-certificate
-7za.exe x .\steamcmd.zip -o.\steamcmd -y
+7za.exe x .\steamcmd.zip -o .\steamcmd -y
 )
 IF EXIST .\steamcmd.zip (
 DEL .\steamcmd.zip

@@ -32,7 +32,7 @@ IF EXIST .\*.zip (
 DEL .\*.zip /q
 )
 ECHO Everything Done!
-REM Uncomment the REM below if you want to check output
+REM Remove the REM below if you want to check output
 REM PAUSE
 REM If you want to start your server automatically, replace the info before with your cmdline and remove both "REM" on last lines
 REM RustDedicated.exe doesnt like being run directly from any other folder, you have to enter its folder before running.

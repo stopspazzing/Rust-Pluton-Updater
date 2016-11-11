@@ -18,7 +18,7 @@ DEL .\steamcmd.zip
 )
 REM Next line verifies and downloads any new version of RUST if needed this is by Skippi
 .\steamcmd\steamcmd.exe +login anonymous +force_install_dir ../Server +app_update 258550 validate +quit
-REM This was next part created by CorrosionX - You may thank him in the http://forum.pluton-team.org if you so like.
+REM This was next part created by CorrosionX - You may thank him in the http://forum.pluton.team if you so like.
 echo.
 echo //--------------------------------------------------------------------\\
 echo //------		Updater By CorrosionX  			------\\

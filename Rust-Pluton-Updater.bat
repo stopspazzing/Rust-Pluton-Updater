@@ -25,10 +25,5 @@ echo //------		Updater By CorrosionX  			------\\
 echo                            pluton-team.org                     
 echo //--------------------------------------------------------------------\\
 echo.
-REM Remove old pluton/rust files
-IF EXIST .\Pluton-master\ (
-DEL .\Pluton-master\*.* /q
-rmdir /s /q .\Pluton-master\
-)
 REM This runs the Pluton-Updater.bat after updating/verifying rust server has been created.
 .\Pluton-Updater.bat

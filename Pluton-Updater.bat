@@ -15,26 +15,24 @@ SET /p "Choice=What file do you want?"
 IF %Choice% == 1 (
 REM stable patched is available.
 wget.exe https://dl.pluton.team/pluton_rust_patched_stable_win.zip --no-check-certificate
-7za.exe x .\pluton_rust_patched_stable_win.zip -o.\server\RustDedicated_Data\Managed -y
+7za.exe x .\pluton_rust_patched_stable_win.zip -o .\server\RustDedicated_Data\Managed -y
 GOTO :finished
-) 
+)
 IF %Choice% == 2 (
 REM Latest patched is available if you like, but possibly buggy.
 wget.exe https://dl.pluton.team/pluton_rust_patched_latest_win.zip --no-check-certificate
-7za.exe x .\pluton_rust_patched_latest_win.zip -o.\server\RustDedicated_Data\Managed -y
+7za.exe x .\pluton_rust_patched_latest_win.zip -o .\server\RustDedicated_Data\Managed -y
 GOTO :finished
-) 
-IF %Choice% NEQ 1 IF %Choice% NEQ 2 (
+)
 ECHO Invalid Choice
 GOTO :choice
-)
 :finished
 REM Clean update after your messy self...
 IF EXIST .\*.zip (
 DEL .\*.zip /q
 )
 ECHO Everything Done!
-REM Uncomment the REM below if you want to check output
+REM Remove the REM below if you want to check output
 REM PAUSE
 REM If you want to start your server automatically, replace the info before with your cmdline and remove both "REM" on last lines
 REM RustDedicated.exe doesnt like being run directly from any other folder, you have to enter its folder before running.
